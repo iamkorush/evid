@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشاهده پرونده‌ها</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'IranSans';
+            src: url('https://cdn.fontcdn.ir/Font/Persian/IranSans/IRANSansWeb.woff2') format('woff2');
+        }
+        body {
+            font-family: 'IranSans', sans-serif;
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="C:\Users\C P C\Desktop\ادله\w.jpg" alt="لوگو" class="w-12 h-12 ml-2">
+                <h1 class="text-xl font-bold text-gray-800">سامانه ادله دیجیتال</h1>
+            </div>
+            <nav>
+                <a href="#" class="text-gray-600 hover:text-blue-600 mx-2">خانه</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 mx-2">پشتیبانی</a>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-grow flex items-center justify-center">
+        <div class="bg-white p-6 rounded-xl shadow-2xl w-full max-w-2xl">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">پرونده‌های من</h2>
+            <div class="mb-4">
+                <input type="text" placeholder="جستجوی پرونده..." class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button class="mt-2 w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 transition duration-300">جستجو</button>
+            </div>
+            <ul class="space-y-4">
+                <li class="p-4 border border-gray-200 rounded-lg bg-gray-50">
+                    <a href="#" class="text-blue-600 hover:underline">شماره پرونده: 1405-12345 | تاریخ: 1404/03/15</a>
+                </li>
+                <li class="p-4 border border-gray-200 rounded-lg bg-gray-50">
+                    <a href="#" class="text-blue-600 hover:underline">شماره پرونده: 1405-12346 | تاریخ: 1404/04/20</a>
+                </li>
+                <li class="p-4 border border-gray-200 rounded-lg bg-gray-50">
+                    <a href="#" class="text-blue-600 hover:underline">شماره پرونده: 1405-12347 | تاریخ: 1404/05/10</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p class="text-sm">© ۱۴۰۴ سامانه ادله دیجیتال. تمامی حقوق محفوظ است.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود به سامانه ادله دیجیتال</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'IranSans';
+            src: url('https://cdn.fontcdn.ir/Font/Persian/IranSans/IRANSansWeb.woff2') format('woff2');
+        }
+        body {
+            font-family: 'IranSans', sans-serif;
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+        }
+        .input-icon {
+            position: relative;
+        }
+        .input-icon i {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: #6b7280;
+        }
+        .input-icon input {
+            padding-left: 40px;
+        }
+        .animate-btn {
+            transition: all 0.3s ease;
+        }
+        .animate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="C:\Users\C P C\Desktop\ادله\w.jpg" alt="لوگو" class="w-12 h-12 ml-2">
+                <h1 class="text-xl font-bold text-gray-800">سامانه ادله دیجیتال</h1>
+            </div>
+            <nav>
+                <a href="#" class="text-gray-600 hover:text-blue-600 mx-2">خانه</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 mx-2">پشتیبانی</a>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-grow flex items-center justify-center">
+        <div class="bg-white p-8 rounded-xl shadow-2xl w-full max-w-md transform transition-all duration-500">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">ورود به سامانه</h2>
+            <form>
+                <div class="mb-5 input-icon">
+                    <label for="username" class="block text-gray-700 text-sm font-medium mb-2">نام کاربری</label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="نام کاربری خود را وارد کنید">
+                </div>
+                <div class="mb-6 input-icon">
+                    <label for="password" class="block text-gray-700 text-sm font-medium mb-2">رمز عبور</label>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="رمز عبور خود را وارد کنید">
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg animate-btn hover:bg-blue-700">ورود</button>
+                <div class="mt-4 text-center">
+                    <a href="#" class="text-blue-600 hover:underline text-sm">بازیابی رمز عبور</a>
+                </div>
+            </form>
+            <div class="mt-6 text-center">
+                <p class="text-gray-600 text-sm mb-3">یا</p>
+                <button class="w-full bg-green-600 text-white p-3 rounded-lg animate-btn hover:bg-green-700">ورود با سامانه ثنا</button>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p class="text-sm">© ۱۴۰۴ سامانه ادله دیجیتال. تمامی حقوق محفوظ است.</p>
+    </footer>
+</body>
+</html>

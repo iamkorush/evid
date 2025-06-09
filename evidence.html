@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جزئیات پرونده</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'IranSans';
+            src: url('https://cdn.fontcdn.ir/Font/Persian/IranSans/IRANSansWeb.woff2') format('woff2');
+        }
+        body {
+            font-family: 'IranSans', sans-serif;
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+        }
+        .evidence-item {
+            transition: all 0.3s ease;
+        }
+        .evidence-item:hover {
+            transform: translateX(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="C:\Users\C P C\Desktop\ادله\w.jpg" alt="لوگو" class="w-12 h-12 ml-2">
+                <h1 class="text-xl font-bold text-gray-800">سامانه ادله دیجیتال</h1>
+            </div>
+            <nav>
+                <a href="#" class="text-gray-600 hover:text-blue-600 mx-2">خانه</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 mx-2">پشتیبانی</a>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-grow flex items-center justify-center">
+        <div class="bg-white p-6 rounded-xl shadow-2xl w-full max-w-3xl">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">جزئیات پرونده</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div>
+                    <p class="text-gray-700"><strong>شماره پرونده:</strong> 1405-12345</p>
+                    <p class="text-gray-700"><strong>تاریخ ثبت:</strong> 1404/03/15</p>
+                    <p class="text-gray-700"><strong>تاریخ آخرین به‌روزرسانی:</strong> 1404/06/08</p>
+                    <p class="text-gray-700"><strong>وضعیت:</strong> فعال</p>
+                </div>
+                <div>
+                    <p class="text-gray-700"><strong>قاضی مسئول:</strong> آقای احمدی</p>
+                    <p class="text-gray-700"><strong>طرفین پرونده:</strong></p>
+                    <p class="text-gray-700">شاکی: علی محمدی</p>
+                    <p class="text-gray-700">متهم: رضا احمدی</p>
+                </div>
+            </div>
+            <div class="mb-6">
+                <p class="text-gray-700"><strong>توضیحات پرونده:</strong></p>
+                <p class="text-gray-600">این پرونده مربوط به اختلاف تجاری بین دو طرف است که شامل نقض قرارداد و ادعای خسارت می‌باشد. جلسات دادگاه در حال برگزاری است و ادله دیجیتال اخیراً بارگذاری شده‌اند.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-gray-800 mb-4">ادله‌های دیجیتال</h3>
+                <ul class="space-y-3">
+                    <li class="evidence-item p-3 border border-gray-200 rounded-lg bg-gray-50 flex justify-between items-center">
+                        <span>قرارداد دیجیتال - بارگذاری شده در 1404/06/01</span>
+                        <div>
+                            <a href="#" class="text-blue-600 hover:underline mr-4">مشاهده</a>
+                            <a href="#" class="text-green-600 hover:underline">دانلود</a>
+                        </div>
+                    </li>
+                    <li class="evidence-item p-3 border border-gray-200 rounded-lg bg-gray-50 flex justify-between items-center">
+                        <span>مکالمات صوتی - بارگذاری شده در 1404/06/05</span>
+                        <div>
+                            <a href="#" class="text-blue-600 hover:underline mr-4">مشاهده</a>
+                            <a href="#" class="text-green-600 hover:underline">دانلود</a>
+                        </div>
+                    </li>
+                    <li class="evidence-item p-3 border border-gray-200 rounded-lg bg-gray-50 flex justify-between items-center">
+                        <span>اسناد تصویری - بارگذاری شده در 1404/06/08</span>
+                        <div>
+                            <a href="#" class="text-blue-600 hover:underline mr-4">مشاهده</a>
+                            <a href="#" class="text-green-600 hover:underline">دانلود</a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="mt-4 w-full bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 transition duration-300">بارگذاری ادله جدید</button>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p class="text-sm">© ۱۴۰۴ سامانه ادله دیجیتال. تمامی حقوق محفوظ است.</p>
+    </footer>
+</body>
+</html>
